@@ -60,6 +60,7 @@ Console.ReadLine();
 
 // En base al codigo anterior, actualizaremos el mismo para que se utilicen bucles foreach, instrucciones de decision como if, else if y else, y se elimine el uso de variables innecesarias.
 
+// Initialize variables - graded assignments
 int currentAssignments = 5;
 
 int[] sophiaScores = new int[] { 90, 86, 87, 98, 100 };
@@ -67,19 +68,48 @@ int[] andrewScores = new int[] { 92, 89, 81, 96, 90 };
 int[] emmaScores = new int[] { 90, 85, 87, 98, 68 };
 int[] loganScores = new int[] { 90, 95, 87, 88, 96 };
 
-int sophiaSum = 0;
+// Student names and scores
+string[] studentNames = new string[] { "Sophia", "Andrew", "Emma", "Logan" };
 
-decimal sophiaScore;
+int[] studentScores = new int[10];
 
-foreach (int score in sophiaScores)
+// Write the reportt header to the console
+Console.WriteLine("Student\t\tGrade\n");
+
+foreach (string name in studentNames)
 {
-    sophiaSum += score;
+    string currentStudent = name;
+
+    if (currentStudent == "Sophia")
+    {
+        studentScores = sophiaScores;
+    }
+    else if (currentStudent == "Andrew")
+    {
+        studentScores = andrewScores;
+    }
+    else if (currentStudent == "Emma")
+    {
+        studentScores = emmaScores;
+    }
+    else if (currentStudent == "Logan")
+    {
+        studentScores = loganScores;
+    }
+
+    int sumAssignmentScores = 0;
+
+    decimal currentStudentGrade;
+
+    foreach (int score in studentScores)
+    {
+        sumAssignmentScores += score;
+    }
+
+    currentStudentGrade = (decimal)sumAssignmentScores / currentAssignments;
+
+    Console.WriteLine($"{currentStudent}\t\t{currentStudentGrade}\t?");
 }
 
-sophiaScore = (decimal)sophiaSum / currentAssignments;
-
-Console.WriteLine("Student\t\tGrade\n");
-Console.WriteLine("Sophia:\t\t" + sophiaScore + "\tA-");
-
-Console.WriteLine("Press the Enter key to continue");
+Console.WriteLine("\nPress the Enter key to continue");
 Console.ReadLine();

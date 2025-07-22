@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LogicaControlDecisiones")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+44e5edc6652a36ef84eaf01916e32a67856aa510")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+67dfbb0fc5e6521fc84533bec3bfdd9ed9fc1e2e")]
 [assembly: System.Reflection.AssemblyProductAttribute("LogicaControlDecisiones")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LogicaControlDecisiones")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
