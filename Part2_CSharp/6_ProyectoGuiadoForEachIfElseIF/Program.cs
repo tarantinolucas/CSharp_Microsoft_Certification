@@ -61,17 +61,19 @@ Console.ReadLine();
 // En base al codigo anterior, actualizaremos el mismo para que se utilicen bucles foreach, instrucciones de decision como if, else if y else, y se elimine el uso de variables innecesarias.
 
 // Initialize variables - graded assignments
-int currentAssignments = 5;
+int examAssignments = 5;
 
-int[] sophiaScores = new int[] { 90, 86, 87, 98, 100 };
-int[] andrewScores = new int[] { 92, 89, 81, 96, 90 };
-int[] emmaScores = new int[] { 90, 85, 87, 98, 68 };
-int[] loganScores = new int[] { 90, 95, 87, 88, 96 };
+int[] sophiaScores = new int[] { 90, 86, 87, 98, 100, 94, 90 };
+int[] andrewScores = new int[] { 92, 89, 81, 96, 90, 89 };
+int[] emmaScores = new int[] { 90, 85, 87, 98, 68, 89, 89, 89 };
+int[] loganScores = new int[] { 90, 95, 87, 88, 96, 96 };
 
 // Student names and scores
 string[] studentNames = new string[] { "Sophia", "Andrew", "Emma", "Logan" };
 
 int[] studentScores = new int[10];
+
+string currentStudentLetterGrade = "";
 
 // Write the reportt header to the console
 Console.WriteLine("Student\t\tGrade\n");
@@ -97,19 +99,89 @@ foreach (string name in studentNames)
         studentScores = loganScores;
     }
 
+    // Initialize variables for the current student
     int sumAssignmentScores = 0;
-
     decimal currentStudentGrade;
+    int gradeAssignments = 0;
 
+    // loop through the scores array and complete calculations for currentStudent
     foreach (int score in studentScores)
     {
-        sumAssignmentScores += score;
+        // Increment the assignment counter
+        gradeAssignments++;
+        if (gradeAssignments <= examAssignments)
+        {
+            // add the exam score to the sum
+            sumAssignmentScores += score;
+        }
+        else
+        {
+            // add the extra credit points to the sum - bonus points equal to 10% of the score
+            sumAssignmentScores += score / 10;
+        }
     }
 
-    currentStudentGrade = (decimal)sumAssignmentScores / currentAssignments;
+    // Calculate the current student's grade
+    currentStudentGrade = (decimal)sumAssignmentScores / examAssignments;
 
-    Console.WriteLine($"{currentStudent}\t\t{currentStudentGrade}\t?");
+    // Determine letter grade based on the current student's grade
+    if (currentStudentGrade >= 97)
+    {
+        currentStudentLetterGrade = "A+";
+    }
+    else if (currentStudentGrade >= 93)
+    {
+        currentStudentLetterGrade = "A";
+    }
+    else if (currentStudentGrade >= 90)
+    {
+        currentStudentLetterGrade = "A-";
+    }
+    else if (currentStudentGrade >= 87)
+    {
+        currentStudentLetterGrade = "B+";
+    }
+    else if (currentStudentGrade >= 83)
+    {
+        currentStudentLetterGrade = "B";
+    }
+    else if (currentStudentGrade >= 80)
+    {
+        currentStudentLetterGrade = "B-";
+    }
+    else if (currentStudentGrade >= 77)
+    {
+        currentStudentLetterGrade = "C+";
+    }
+    else if (currentStudentGrade >= 73)
+    {
+        currentStudentLetterGrade = "C";
+    }
+    else if (currentStudentGrade >= 70)
+    {
+        currentStudentLetterGrade = "C-";
+    }
+    else if (currentStudentGrade >= 67)
+    {
+        currentStudentLetterGrade = "D+";
+    }
+    else if (currentStudentGrade >= 63)
+    {
+        currentStudentLetterGrade = "D";
+    }
+    else if (currentStudentGrade >= 60)
+    {
+        currentStudentLetterGrade = "D-";
+    }
+    else
+    {
+        currentStudentLetterGrade = "F";
+    }
+
+    // Console output for each student
+    Console.WriteLine($"{currentStudent}\t\t{currentStudentGrade}\t{currentStudentLetterGrade}");
 }
 
+// Keeps the output windows open to view results
 Console.WriteLine("\nPress the Enter key to continue");
 Console.ReadLine();

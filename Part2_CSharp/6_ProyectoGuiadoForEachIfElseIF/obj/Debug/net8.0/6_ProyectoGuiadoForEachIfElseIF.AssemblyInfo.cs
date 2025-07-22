@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("6_ProyectoGuiadoForEachIfElseIF")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+67dfbb0fc5e6521fc84533bec3bfdd9ed9fc1e2e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+001b888e903eeb76eb622c21766dbf089cdb1357")]
 [assembly: System.Reflection.AssemblyProductAttribute("6_ProyectoGuiadoForEachIfElseIF")]
 [assembly: System.Reflection.AssemblyTitleAttribute("6_ProyectoGuiadoForEachIfElseIF")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
