@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lucas\\Desktop\\Lucas\\Desarrollo de software\\Repositorios Github\\CSharp_Microsoft_Certification\\Part2_CSharp\\6_ProyectoGuiadoForEachIfElseIF\\6_ProyectoGuiadoForEachIfElseIF.csproj": {}
+    "C:\\Users\\Lucas\\Desktop\\Lucas\\Desarrollo de software\\Repositorios Github\\CSharp_Microsoft_Certification\\Part2_CSharp\\6_ProyectoGuiadoForEachIfElseIf\\6_ProyectoGuiadoForEachIfElseIF.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lucas\\Desktop\\Lucas\\Desarrollo de software\\Repositorios Github\\CSharp_Microsoft_Certification\\Part2_CSharp\\6_ProyectoGuiadoForEachIfElseIF\\6_ProyectoGuiadoForEachIfElseIF.csproj": {
+    "C:\\Users\\Lucas\\Desktop\\Lucas\\Desarrollo de software\\Repositorios Github\\CSharp_Microsoft_Certification\\Part2_CSharp\\6_ProyectoGuiadoForEachIfElseIf\\6_ProyectoGuiadoForEachIfElseIF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lucas\\Desktop\\Lucas\\Desarrollo de software\\Repositorios Github\\CSharp_Microsoft_Certification\\Part2_CSharp\\6_ProyectoGuiadoForEachIfElseIF\\6_ProyectoGuiadoForEachIfElseIF.csproj",
+        "projectUniqueName": "C:\\Users\\Lucas\\Desktop\\Lucas\\Desarrollo de software\\Repositorios Github\\CSharp_Microsoft_Certification\\Part2_CSharp\\6_ProyectoGuiadoForEachIfElseIf\\6_ProyectoGuiadoForEachIfElseIF.csproj",
         "projectName": "6_ProyectoGuiadoForEachIfElseIF",
-        "projectPath": "C:\\Users\\Lucas\\Desktop\\Lucas\\Desarrollo de software\\Repositorios Github\\CSharp_Microsoft_Certification\\Part2_CSharp\\6_ProyectoGuiadoForEachIfElseIF\\6_ProyectoGuiadoForEachIfElseIF.csproj",
+        "projectPath": "C:\\Users\\Lucas\\Desktop\\Lucas\\Desarrollo de software\\Repositorios Github\\CSharp_Microsoft_Certification\\Part2_CSharp\\6_ProyectoGuiadoForEachIfElseIf\\6_ProyectoGuiadoForEachIfElseIF.csproj",
         "packagesPath": "C:\\Users\\Lucas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lucas\\Desktop\\Lucas\\Desarrollo de software\\Repositorios Github\\CSharp_Microsoft_Certification\\Part2_CSharp\\6_ProyectoGuiadoForEachIfElseIF\\obj\\",
+        "outputPath": "C:\\Users\\Lucas\\Desktop\\Lucas\\Desarrollo de software\\Repositorios Github\\CSharp_Microsoft_Certification\\Part2_CSharp\\6_ProyectoGuiadoForEachIfElseIf\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
