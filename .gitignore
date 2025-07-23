@@ -1,0 +1,39 @@
+# Binaries
+[Dd]ebug/
+[Rr]elease/
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio & VS Code
+.vs/
+.vscode/  # Si no quieres compartir configuraciones de VS Code específicas del usuario
+*.user
+*.suo
+*.dbmdl
+*.jfm
+*.pfx
+
+# Project files
+*.csproj.user
+*.resharper
+*.gmx
+
+# ReSharper and other JetBrains files
+.idea/
+*.DotSettings
+*.DotSettings.user
+
+# NuGet
+*.nupkg
+.nuget/
+packages/  # Si usas el antiguo estilo de packages.config
+!packages.config # Pero si quieres mantener packages.config
+
+# Rider
+.idea/
+
+# Local Test Results
+TestResults/
+
+# Azure Functions local run stuff
+local.settings.json

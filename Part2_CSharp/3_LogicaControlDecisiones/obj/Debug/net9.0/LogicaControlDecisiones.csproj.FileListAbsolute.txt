@@ -26,3 +26,18 @@ C:\Users\Lucas\Desktop\Lucas\Desarrollo de software\Repositorios Github\CSharp_M
 C:\Users\Lucas\Desktop\Lucas\Desarrollo de software\Repositorios Github\CSharp_Microsoft_Certification\Part2_CSharp\3_LogicaControlDecisiones\obj\Debug\net9.0\LogicaControlDecisiones.pdb
 C:\Users\Lucas\Desktop\Lucas\Desarrollo de software\Repositorios Github\CSharp_Microsoft_Certification\Part2_CSharp\3_LogicaControlDecisiones\obj\Debug\net9.0\LogicaControlDecisiones.genruntimeconfig.cache
 C:\Users\Lucas\Desktop\Lucas\Desarrollo de software\Repositorios Github\CSharp_Microsoft_Certification\Part2_CSharp\3_LogicaControlDecisiones\obj\Debug\net9.0\ref\LogicaControlDecisiones.dll
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\3_LogicaControlDecisiones\bin\Debug\net9.0\LogicaControlDecisiones.exe
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\3_LogicaControlDecisiones\bin\Debug\net9.0\LogicaControlDecisiones.deps.json
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\3_LogicaControlDecisiones\bin\Debug\net9.0\LogicaControlDecisiones.runtimeconfig.json
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\3_LogicaControlDecisiones\bin\Debug\net9.0\LogicaControlDecisiones.dll
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\3_LogicaControlDecisiones\bin\Debug\net9.0\LogicaControlDecisiones.pdb
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\3_LogicaControlDecisiones\obj\Debug\net9.0\LogicaControlDecisiones.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\3_LogicaControlDecisiones\obj\Debug\net9.0\LogicaControlDecisiones.AssemblyInfoInputs.cache
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\3_LogicaControlDecisiones\obj\Debug\net9.0\LogicaControlDecisiones.AssemblyInfo.cs
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\3_LogicaControlDecisiones\obj\Debug\net9.0\LogicaControlDecisiones.csproj.CoreCompileInputs.cache
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\3_LogicaControlDecisiones\obj\Debug\net9.0\LogicaControlDecisiones.sourcelink.json
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\3_LogicaControlDecisiones\obj\Debug\net9.0\LogicaControlDecisiones.dll
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\3_LogicaControlDecisiones\obj\Debug\net9.0\refint\LogicaControlDecisiones.dll
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\3_LogicaControlDecisiones\obj\Debug\net9.0\LogicaControlDecisiones.pdb
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\3_LogicaControlDecisiones\obj\Debug\net9.0\LogicaControlDecisiones.genruntimeconfig.cache
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\3_LogicaControlDecisiones\obj\Debug\net9.0\ref\LogicaControlDecisiones.dll

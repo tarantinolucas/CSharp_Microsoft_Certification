@@ -26,3 +26,18 @@ C:\Users\Lucas\Desktop\Lucas\Desarrollo de software\Repositorios Github\CSharp_M
 C:\Users\Lucas\Desktop\Lucas\Desarrollo de software\Repositorios Github\CSharp_Microsoft_Certification\Part2_CSharp\2_ConociendoBibliotecaDotnet\obj\Debug\net9.0\ConociendoBibliotecaDotnet.pdb
 C:\Users\Lucas\Desktop\Lucas\Desarrollo de software\Repositorios Github\CSharp_Microsoft_Certification\Part2_CSharp\2_ConociendoBibliotecaDotnet\obj\Debug\net9.0\ConociendoBibliotecaDotnet.genruntimeconfig.cache
 C:\Users\Lucas\Desktop\Lucas\Desarrollo de software\Repositorios Github\CSharp_Microsoft_Certification\Part2_CSharp\2_ConociendoBibliotecaDotnet\obj\Debug\net9.0\ref\ConociendoBibliotecaDotnet.dll
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\2_ConociendoBibliotecaDotnet\bin\Debug\net9.0\ConociendoBibliotecaDotnet.exe
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\2_ConociendoBibliotecaDotnet\bin\Debug\net9.0\ConociendoBibliotecaDotnet.deps.json
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\2_ConociendoBibliotecaDotnet\bin\Debug\net9.0\ConociendoBibliotecaDotnet.runtimeconfig.json
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\2_ConociendoBibliotecaDotnet\bin\Debug\net9.0\ConociendoBibliotecaDotnet.dll
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\2_ConociendoBibliotecaDotnet\bin\Debug\net9.0\ConociendoBibliotecaDotnet.pdb
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\2_ConociendoBibliotecaDotnet\obj\Debug\net9.0\ConociendoBibliotecaDotnet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\2_ConociendoBibliotecaDotnet\obj\Debug\net9.0\ConociendoBibliotecaDotnet.AssemblyInfoInputs.cache
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\2_ConociendoBibliotecaDotnet\obj\Debug\net9.0\ConociendoBibliotecaDotnet.AssemblyInfo.cs
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\2_ConociendoBibliotecaDotnet\obj\Debug\net9.0\ConociendoBibliotecaDotnet.csproj.CoreCompileInputs.cache
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\2_ConociendoBibliotecaDotnet\obj\Debug\net9.0\ConociendoBibliotecaDotnet.sourcelink.json
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\2_ConociendoBibliotecaDotnet\obj\Debug\net9.0\ConociendoBibliotecaDotnet.dll
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\2_ConociendoBibliotecaDotnet\obj\Debug\net9.0\refint\ConociendoBibliotecaDotnet.dll
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\2_ConociendoBibliotecaDotnet\obj\Debug\net9.0\ConociendoBibliotecaDotnet.pdb
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\2_ConociendoBibliotecaDotnet\obj\Debug\net9.0\ConociendoBibliotecaDotnet.genruntimeconfig.cache
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\2_ConociendoBibliotecaDotnet\obj\Debug\net9.0\ref\ConociendoBibliotecaDotnet.dll

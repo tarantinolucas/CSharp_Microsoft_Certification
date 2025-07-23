@@ -12,3 +12,18 @@ C:\Users\Lucas\Desktop\Lucas\Desarrollo de software\Repositorios Github\CSharp_M
 C:\Users\Lucas\Desktop\Lucas\Desarrollo de software\Repositorios Github\CSharp_Microsoft_Certification\Part2_CSharp\4_matrices\obj\Debug\net9.0\4_Matrices.pdb
 C:\Users\Lucas\Desktop\Lucas\Desarrollo de software\Repositorios Github\CSharp_Microsoft_Certification\Part2_CSharp\4_matrices\obj\Debug\net9.0\4_Matrices.genruntimeconfig.cache
 C:\Users\Lucas\Desktop\Lucas\Desarrollo de software\Repositorios Github\CSharp_Microsoft_Certification\Part2_CSharp\4_matrices\obj\Debug\net9.0\ref\4_Matrices.dll
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\4_Matrices\bin\Debug\net9.0\4_Matrices.exe
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\4_Matrices\bin\Debug\net9.0\4_Matrices.deps.json
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\4_Matrices\bin\Debug\net9.0\4_Matrices.runtimeconfig.json
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\4_Matrices\bin\Debug\net9.0\4_Matrices.dll
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\4_Matrices\bin\Debug\net9.0\4_Matrices.pdb
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\4_Matrices\obj\Debug\net9.0\4_Matrices.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\4_Matrices\obj\Debug\net9.0\4_Matrices.AssemblyInfoInputs.cache
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\4_Matrices\obj\Debug\net9.0\4_Matrices.AssemblyInfo.cs
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\4_Matrices\obj\Debug\net9.0\4_Matrices.csproj.CoreCompileInputs.cache
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\4_Matrices\obj\Debug\net9.0\4_Matrices.sourcelink.json
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\4_Matrices\obj\Debug\net9.0\4_Matrices.dll
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\4_Matrices\obj\Debug\net9.0\refint\4_Matrices.dll
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\4_Matrices\obj\Debug\net9.0\4_Matrices.pdb
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\4_Matrices\obj\Debug\net9.0\4_Matrices.genruntimeconfig.cache
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\4_Matrices\obj\Debug\net9.0\ref\4_Matrices.dll

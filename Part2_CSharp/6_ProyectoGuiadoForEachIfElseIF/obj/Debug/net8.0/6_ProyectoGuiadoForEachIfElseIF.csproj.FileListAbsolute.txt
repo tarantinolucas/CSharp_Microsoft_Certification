@@ -13,3 +13,18 @@ C:\Users\Lucas\Desktop\Lucas\Desarrollo de software\Repositorios Github\CSharp_M
 C:\Users\Lucas\Desktop\Lucas\Desarrollo de software\Repositorios Github\CSharp_Microsoft_Certification\Part2_CSharp\6_ProyectoGuiadoForEachIfElseIF\obj\Debug\net8.0\6_ProyectoGuiadoForEachIfElseIF.pdb
 C:\Users\Lucas\Desktop\Lucas\Desarrollo de software\Repositorios Github\CSharp_Microsoft_Certification\Part2_CSharp\6_ProyectoGuiadoForEachIfElseIF\obj\Debug\net8.0\6_ProyectoGuiadoForEachIfElseIF.genruntimeconfig.cache
 C:\Users\Lucas\Desktop\Lucas\Desarrollo de software\Repositorios Github\CSharp_Microsoft_Certification\Part2_CSharp\6_ProyectoGuiadoForEachIfElseIF\obj\Debug\net8.0\ref\6_ProyectoGuiadoForEachIfElseIF.dll
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\6_ProyectoGuiadoForEachIfElseIf\bin\Debug\net8.0\6_ProyectoGuiadoForEachIfElseIF.exe
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\6_ProyectoGuiadoForEachIfElseIf\bin\Debug\net8.0\6_ProyectoGuiadoForEachIfElseIF.deps.json
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\6_ProyectoGuiadoForEachIfElseIf\bin\Debug\net8.0\6_ProyectoGuiadoForEachIfElseIF.runtimeconfig.json
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\6_ProyectoGuiadoForEachIfElseIf\bin\Debug\net8.0\6_ProyectoGuiadoForEachIfElseIF.dll
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\6_ProyectoGuiadoForEachIfElseIf\bin\Debug\net8.0\6_ProyectoGuiadoForEachIfElseIF.pdb
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\6_ProyectoGuiadoForEachIfElseIf\obj\Debug\net8.0\6_ProyectoGuiadoForEachIfElseIF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\6_ProyectoGuiadoForEachIfElseIf\obj\Debug\net8.0\6_ProyectoGuiadoForEachIfElseIF.AssemblyInfoInputs.cache
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\6_ProyectoGuiadoForEachIfElseIf\obj\Debug\net8.0\6_ProyectoGuiadoForEachIfElseIF.AssemblyInfo.cs
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\6_ProyectoGuiadoForEachIfElseIf\obj\Debug\net8.0\6_ProyectoGuiadoForEachIfElseIF.csproj.CoreCompileInputs.cache
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\6_ProyectoGuiadoForEachIfElseIf\obj\Debug\net8.0\6_ProyectoGuiadoForEachIfElseIF.sourcelink.json
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\6_ProyectoGuiadoForEachIfElseIf\obj\Debug\net8.0\6_ProyectoGuiadoForEachIfElseIF.dll
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\6_ProyectoGuiadoForEachIfElseIf\obj\Debug\net8.0\refint\6_ProyectoGuiadoForEachIfElseIF.dll
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\6_ProyectoGuiadoForEachIfElseIf\obj\Debug\net8.0\6_ProyectoGuiadoForEachIfElseIF.pdb
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\6_ProyectoGuiadoForEachIfElseIf\obj\Debug\net8.0\6_ProyectoGuiadoForEachIfElseIF.genruntimeconfig.cache
+C:\Users\taran\Desktop\Lucas\Programacion\CSharp_Microsoft_Certification\Part2_CSharp\6_ProyectoGuiadoForEachIfElseIf\obj\Debug\net8.0\ref\6_ProyectoGuiadoForEachIfElseIF.dll
