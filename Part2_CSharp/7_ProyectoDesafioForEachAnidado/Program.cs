@@ -68,11 +68,21 @@ foreach (string name in studentNames)
 
     decimal currentStudentGrade = 0;
 
+    decimal currentStudentExtraCreditGrade = 0;
+
+    decimal currentStudentExamGrade = 0;
+
     int gradedAssignments = 0;
 
     int sumExamScores = 0;
 
-    int extraCreditAssignments = 0;
+    decimal extraCreditAssignments = 0;
+
+    int extraCreditScore = 0;
+
+    int extraCreditCount = studentScores.Length - examAssignments;
+
+    decimal currentExtraCreditPoints = 0;
 
     /*
     the inner foreach loop sums assignment scores
@@ -83,12 +93,21 @@ foreach (string name in studentNames)
         gradedAssignments += 1;
 
         if (gradedAssignments <= examAssignments)
+        {
             sumAssignmentScores += score;
+            sumExamScores += score;
+        }
         else
+        {
+            extraCreditScore += score;
             sumAssignmentScores += score / 10;
+            extraCreditAssignments += (decimal)score / 10;
+        }
     }
-
+    currentStudentExamGrade = (decimal)(sumExamScores) / examAssignments;
     currentStudentGrade = (decimal)(sumAssignmentScores) / examAssignments;
+    currentStudentExtraCreditGrade = (decimal)(extraCreditScore) / extraCreditCount;
+    currentExtraCreditPoints = (decimal)extraCreditAssignments / examAssignments;
 
     if (currentStudentGrade >= 97)
         currentStudentLetterGrade = "A+";
@@ -121,7 +140,7 @@ foreach (string name in studentNames)
     // Sophia:         92.2    A-
 
     Console.WriteLine(
-        $"{currentStudent}\t\t{sumExamScores}\t\t{currentStudentGrade}\t{currentStudentLetterGrade}\t{extraCreditAssignments} ({extraCreditAssignments} pts)"
+        $"{currentStudent}\t\t{currentStudentExamGrade}\t\t{currentStudentGrade}\t{currentStudentLetterGrade}\t{currentStudentExtraCreditGrade} ({currentExtraCreditPoints} pts)"
     );
 }
 
