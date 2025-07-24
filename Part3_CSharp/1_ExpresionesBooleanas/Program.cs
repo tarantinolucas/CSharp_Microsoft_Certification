@@ -103,6 +103,7 @@ Console.WriteLine(s1 != s2); // output: False
 
 // -------------------------------------------------------
 // Unidad 3: Operadores condicionales
+// -------------------------------------------------------
 Console.WriteLine("\n----------------------------------");
 Console.WriteLine("Unidad 3: Operadores condicionales");
 Console.WriteLine("------------------------------------");
@@ -112,8 +113,97 @@ Console.WriteLine("------------------------------------");
 // <evaluate this condition> ? <if condition is true, return this value> : <if condition is false, return this value>
 
 int saleAmout = 1001;
-int discount = saleAmout > 1000 ? 100 : 50; // Si saleAmout es mayor a 1000, discount será 100, de lo contrario será 50
-Console.WriteLine($"\nDiscount: {discount}");
+
+// int discount = saleAmout > 1000 ? 100 : 50; // Comentamos esta linea porque vamos a utilizar un operador condicional insertado.
+Console.WriteLine(
+    $"El objetivo es que se aplique un descuento de 100 si la venta es mayor a 1000, de lo contrario será de 50."
+);
+Console.WriteLine(
+    $"En este caso, la venta es de {saleAmout}, por lo tanto el descuento aplicado es: {(saleAmout > 1000 ? 100 : 50)}"
+);
+
+// -------------------------------------------------------
+// Unidad 4 y 5: Desafío de operadores condicionales
+// -------------------------------------------------------
+Console.WriteLine("\n-------------------------------------------");
+Console.WriteLine("Unidad 4: Desafío de operadores condicionales");
+Console.WriteLine("---------------------------------------------");
+
+/* Desafío:
+En este desafío, implementará un operador condicional para simular un "volteo de moneda". La lógica de decisión resultante mostrará heads o tails.
+*/
+
+Random random = new Random();
+int coinFlip = random.Next(0, 2);
+
+Console.WriteLine(
+    $"Se ha lanzado una moneda y el resultado es: {(coinFlip == 0 ? "heads" : "tails")}"
+);
+
+// -------------------------------------------------------
+// Unidad 6: Desafío con expresiones booleanas
+// -------------------------------------------------------
+Console.WriteLine("\n-------------------------------------------");
+Console.WriteLine("Unidad 6: Desafío con expresiones booleanas");
+Console.WriteLine("---------------------------------------------");
+
+/* Desafío:
+En este desafío, implementará la lógica de decisión basada en una serie de reglas de negocio. Las reglas de negocio especifican el acceso que se concede a los usuarios en función de sus permisos basados en roles y su nivel de carrera. Las ramas de código muestran un mensaje diferente al usuario en función de sus permisos y nivel.
+*/
+
+string permission = "Admin"; // Modifique estos valores para probar diferentes escenarios
+int level = 56; // Modifique estos valores para probar diferentes escenarios
+
+if (permission.Contains("Admin") && level > 55)
+{
+    Console.WriteLine("Welcome, Super Admin user.");
+}
+else if (permission.Contains("Admin") && level <= 55)
+{
+    Console.WriteLine("Welcome, Admin user.");
+}
+else if (permission.Contains("Manager") && level > 20)
+{
+    Console.WriteLine("Contact an Admin for access.");
+}
+else
+{
+    Console.WriteLine("You do not have sufficient privileges.");
+}
+
+/* Posible solucion alternativa:
+
+string permission = "Admin|Manager";
+int level = 53;
+
+if (permission.Contains("Admin"))
+{
+    if (level > 55)
+    {
+        Console.WriteLine("Welcome, Super Admin user.");
+    }
+    else
+    {
+        Console.WriteLine("Welcome, Admin user.");
+    }
+}
+else if (permission.Contains("Manager"))
+{
+    if (level >= 20)
+    {
+        Console.WriteLine("Contact an Admin for access.");
+    }
+    else
+    {
+        Console.WriteLine("You do not have sufficient privileges.");
+    }
+}
+else
+{
+    Console.WriteLine("You do not have sufficient privileges.");
+}
+
+*/
 
 // Fin del programa
 Console.WriteLine("\n------------------------------------");
