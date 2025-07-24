@@ -2,7 +2,7 @@
 [Dd]ebug/
 [Rr]elease/
 [Bb]in/
-[Oo]bj/
+[Oo]bj/ 
 
 # Visual Studio & VS Code
 .vs/
@@ -27,7 +27,7 @@
 *.nupkg
 .nuget/
 packages/  # Si usas el antiguo estilo de packages.config
-!packages.config # Pero si quieres mantener packages.config
+packages.config # Pero si quieres mantener packages.config
 
 # Rider
 .idea/
