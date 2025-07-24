@@ -101,6 +101,20 @@ string s2 = "Hello";
 Console.Write("\nSe compara: \"Hello\" != \"Hello\": ");
 Console.WriteLine(s1 != s2); // output: False
 
+// -------------------------------------------------------
+// Unidad 3: Operadores condicionales
+Console.WriteLine("\n----------------------------------");
+Console.WriteLine("Unidad 3: Operadores condicionales");
+Console.WriteLine("------------------------------------");
+
+// Formato basico de un operador condicional:
+// condición ? valorSiVerdadero : valorSiFalso
+// <evaluate this condition> ? <if condition is true, return this value> : <if condition is false, return this value>
+
+int saleAmout = 1001;
+int discount = saleAmout > 1000 ? 100 : 50; // Si saleAmout es mayor a 1000, discount será 100, de lo contrario será 50
+Console.WriteLine($"\nDiscount: {discount}");
+
 // Fin del programa
 Console.WriteLine("\n------------------------------------");
 Console.WriteLine("Presiona cualquier tecla para salir...");
