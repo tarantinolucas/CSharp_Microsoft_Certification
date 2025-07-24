@@ -27,7 +27,7 @@
 *.nupkg
 .nuget/
 packages/  # Si usas el antiguo estilo de packages.config
-!packages.config # Pero si quieres mantener packages.config
+packages.config # Pero si quieres mantener packages.config
 
 # Rider
 .idea/
