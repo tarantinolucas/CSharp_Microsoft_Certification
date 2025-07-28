@@ -204,6 +204,45 @@ Console.WriteLine("\n--------------------------------------------------");
 Console.WriteLine($"¡Número {userInput} aceptado!");
 Console.WriteLine("--------------------------------------------------");
 
+/*
+Resolución alternativa del desafío de código:
+
+string? readResult;
+string valueEntered = "";
+int numValue = 0;
+bool validNumber = false;
+
+Console.WriteLine("Enter an integer value between 5 and 10");
+
+do
+{
+    readResult = Console.ReadLine();
+    if (readResult != null)
+    {
+        valueEntered = readResult;
+    }
+
+    validNumber = int.TryParse(valueEntered, out numValue);
+
+    if (validNumber == true)
+    {
+        if (numValue <= 5 || numValue >= 10)
+        {
+            validNumber = false;
+            Console.WriteLine($"You entered {numValue}. Please enter a number between 5 and 10.");
+        }
+    }
+    else
+    {
+        Console.WriteLine("Sorry, you entered an invalid number, please try again");
+    }
+} while (validNumber == false);
+
+Console.WriteLine($"Your input value ({numValue}) has been accepted.");
+
+readResult = Console.ReadLine();
+*/
+
 Console.WriteLine("\n----------------------------------------------------------");
 Console.WriteLine("Unidad 5: Proyecto de código 2, Validar entrada de cadena");
 Console.WriteLine("----------------------------------------------------------\n");
@@ -255,7 +294,37 @@ Console.WriteLine($"\n--------------------------------------------------");
 Console.WriteLine($"¡Rol {userRole} aceptado!");
 Console.WriteLine("--------------------------------------------------\n");
 
-// -------------------------------------------------
+/* Resolución alternativa del desafío de código:
+
+string? readResult;
+string roleName = "";
+bool validEntry = false;
+
+do
+{
+    Console.WriteLine("Enter your role name (Administrator, Manager, or User)");
+    readResult = Console.ReadLine();
+    if (readResult != null)
+    {
+        roleName = readResult.Trim();
+    }
+
+    if (roleName.ToLower() == "administrator" || roleName.ToLower() == "manager" || roleName.ToLower() == "user")
+    {
+        validEntry = true;
+    }
+    else
+    {
+        Console.Write($"The role name that you entered, \"{roleName}\" is not valid. ");
+    }
+
+} while (validEntry == false);
+
+Console.WriteLine($"Your input value ({roleName}) has been accepted.");
+readResult = Console.ReadLine();
+*/
+
+// ----------- Separador de Secciones -----------
 
 Console.WriteLine("----------------------------------------------------------------------------");
 Console.WriteLine("Unidad 5: Proyecto de código 3, Procesar el contenido de una matriz de cadenas");
@@ -283,6 +352,41 @@ En el bucle interno, la solución no debe mostrar el carácter de punto.
 En el bucle interno, la solución debe usar los métodos Remove(), Substring() y TrimStart() para procesar la información de cadena.
 */
 
+// Conociendo métodos de la clase String:
+
+/*
+string exampleString = "I like pizza. I like roast chicken. I like salad";
+string auxString;
+string auxString2;
+
+int periodLocation = exampleString.IndexOf(".");
+auxString = exampleString.Remove(0, periodLocation + 1).TrimStart();
+auxString2 = exampleString.Substring(0, periodLocation).TrimStart();
+int periodLocation1;
+
+Console.WriteLine("// Pruebas preliminares:\n");
+Console.WriteLine($"Ubicación del primer punto: {periodLocation}\n");
+Console.WriteLine($"Cadena restante despues de eliminar hasta el primer punto: {auxString}\n");
+Console.WriteLine($"Cadena antes del primer punto luego de eliminar la primera: {auxString2}\n");
+Console.WriteLine($"Cadena original al finalizar las operaciones: {exampleString}\n");
+
+do
+{
+    periodLocation1 = exampleString.IndexOf(".");
+
+    if (periodLocation1 != -1)
+    {
+        Console.WriteLine(exampleString.Substring(0, periodLocation1).TrimStart());
+        exampleString = exampleString.Remove(0, periodLocation1 + 1).TrimStart();
+        periodLocation = exampleString.IndexOf(".");
+    }
+    else
+    {
+        Console.WriteLine(exampleString);
+    }
+} while (periodLocation1 != -1);
+
+*/
 string[] myStrings = new string[2]
 {
     "I like pizza. I like roast chicken. I like salad",
@@ -293,22 +397,63 @@ int periodLocation;
 
 foreach (string myString in myStrings)
 {
-    periodLocation = myString.IndexOf(".");
+    string copyString = myString;
 
-    if (periodLocation != -1)
+    while (copyString.Length > 0)
     {
-        while (periodLocation != -1)
+        periodLocation = copyString.IndexOf(".");
+
+        if (periodLocation != -1)
         {
-            Console.WriteLine(myString.Substring(0, periodLocation).TrimStart());
-            myString.Remove(0, periodLocation + 1);
-            periodLocation = myString.IndexOf(".");
+            Console.WriteLine(copyString.Substring(0, periodLocation).TrimStart());
+            copyString = copyString.Remove(0, periodLocation + 1).TrimStart();
+        }
+        else
+        {
+            Console.WriteLine(copyString);
+            copyString = "";
         }
     }
-    else
-    {
-        Console.WriteLine(myString);
-    }
 }
+
+/* Resolución alternativa del desafío de código:
+
+string[] myStrings = new string[2] { "I like pizza. I like roast chicken. I like salad", "I like all three of the menu choices" };
+int stringsCount = myStrings.Length;
+
+string myString = "";
+int periodLocation = 0;
+
+for (int i = 0; i < stringsCount; i++)
+{
+    myString = myStrings[i];
+    periodLocation = myString.IndexOf(".");
+
+    string mySentence;
+
+    // extract sentences from each string and display them one at a time
+    while (periodLocation != -1)
+    {
+
+        // first sentence is the string value to the left of the period location
+        mySentence = myString.Remove(periodLocation);
+
+        // the remainder of myString is the string value to the right of the location
+        myString = myString.Substring(periodLocation + 1);
+
+        // remove any leading white-space from myString
+        myString = myString.TrimStart();
+
+        // update the comma location and increment the counter
+        periodLocation = myString.IndexOf(".");
+
+        Console.WriteLine(mySentence);
+    }
+ 
+    mySentence = myString.Trim();
+    Console.WriteLine(mySentence);
+}
+*/
 
 // -------------------------------------------------
 // Fin del programa
