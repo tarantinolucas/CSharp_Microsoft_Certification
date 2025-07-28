@@ -71,6 +71,245 @@ Console.WriteLine($"\n-----------------------------------------------------");
 Console.WriteLine($"¡Número 7 generado después de {counter3} iteraciones!");
 Console.WriteLine($"-----------------------------------------------------\n");
 
+// Desafío de código: escribir código para implementar reglas de juego.
+
+/*
+Estas son las reglas para el juego de batalla que necesita implementar en el proyecto de código:
+
+Debes usar la instrucción do-while o la instrucción while como un bucle de juego externo.
+El héroe y el monstruo comenzarán con 10 puntos de salud.
+Todos los ataques tendrán un valor comprendido entre 1 y 10.
+El héroe ataca primero.
+Imprima la cantidad de salud que ha perdido el monstruo y su salud restante.
+Si la salud del monstruo es mayor que 0, puede atacar al héroe.
+Imprima la cantidad de salud que ha perdido el héroe y su salud restante.
+Continúe con esta secuencia de ataque hasta que la salud del monstruo o del héroe sea cero o menos.
+Imprima el ganador.
+*/
+
+Console.WriteLine("--------------------------------------------------");
+Console.WriteLine("Unidad 4: Desafío de código, Juego de batalla");
+Console.WriteLine("--------------------------------------------------\n");
+
+int heroHealth = 10;
+int monsterHealth = 10;
+int attackRandomValue;
+;
+int minAttack = 1;
+int maxAttack = 10;
+
+// bool isHeroTurn = true; // Nos ahorarriamos esta declaración y se ejecutaria el codigo la mitad de veces si usamos un bucle do-while
+
+Random attackRandom = new();
+
+do
+{
+    // Solución del desafío mas eficiente planteada en el curso
+    attackRandomValue = attackRandom.Next(minAttack, maxAttack);
+    monsterHealth -= attackRandomValue;
+    Console.WriteLine(
+        $"El héroe ataca. \tDaño: {attackRandomValue} pts. \tVida del monstruo: {monsterHealth} hp."
+    );
+
+    if (monsterHealth <= 0)
+        continue;
+
+    attackRandomValue = attackRandom.Next(minAttack, maxAttack);
+    heroHealth -= attackRandomValue;
+    Console.WriteLine(
+        $"El monstruo ataca. \tDaño: {attackRandomValue} pts. \tVida del héroe: {heroHealth} hp."
+    );
+    /*
+    Esta es la solución que cree yo
+
+    if (isHeroTurn && heroHealth > 0 && monsterHealth > 0)
+    {
+        attackRandomValue = attackRandom.Next(minAttack, maxAttack);
+        monsterHealth -= attackRandomValue;
+        Console.WriteLine(
+            $"El héroe ataca. \tDaño: {attackRandomValue} pts. \tVida del monstruo: {monsterHealth} hp."
+        );
+        isHeroTurn = false;
+    }
+    else
+    {
+        attackRandomValue = attackRandom.Next(minAttack, maxAttack);
+        heroHealth -= attackRandomValue;
+        Console.WriteLine(
+            $"El monstruo ataca. \tDaño: {attackRandomValue} pts. \tVida del héroe: {heroHealth} hp."
+        );
+        isHeroTurn = true;
+    }
+    */
+} while (heroHealth > 0 && monsterHealth > 0);
+
+if (heroHealth <= 0)
+{
+    Console.WriteLine("\n--------------------------------------------------");
+    Console.WriteLine("El monstruo ha ganado!");
+    Console.WriteLine("--------------------------------------------------");
+}
+else
+{
+    Console.WriteLine("\n--------------------------------------------------");
+    Console.WriteLine("El héroe ha ganado!");
+    Console.WriteLine("--------------------------------------------------");
+}
+
+Console.WriteLine("----------------------------------------------------------");
+Console.WriteLine("Unidad 5: Proyecto de código 1, validar entrada de enteros");
+Console.WriteLine("----------------------------------------------------------\n");
+
+// string? readResult; // string? permite que la variable sea nula.
+// readResult = Console.ReadLine(); // Lee la entrada del usuario y la guarda en readResult, permitiendo que sea nula si el usuario no ingresa nada.
+
+// int.TryParse(readResult, out int result); // Intenta convertir la entrada del usuario a un entero. Si tiene éxito, 'result' contendrá el valor convertido; de lo contrario, 'result' será 0 y se puede manejar el error.
+
+/*
+Estas son las condiciones que el primer proyecto de codificación debe implementar:
+
+La solución debe incluir una iteración do-while o while.
+
+Antes del bloque de iteración: la solución debe usar una instrucción Console.WriteLine() para solicitar al usuario un valor de enteros entre 5 y 10.
+
+Dentro del bloque de iteración:
+* La solución debe usar una instrucción Console.ReadLine() para obtener la entrada del usuario.
+* La solución debe asegurarse de que la entrada es una representación válida de un entero.
+* Si el valor del entero no está comprendido entre 5 y 10, el código debe usar una instrucción Console.WriteLine() para solicitar al usuario un valor del entero entre 5 y 10.
+* La solución debe garantizar que el valor de enteros está comprendido entre 5 y 10 antes de salir de la iteración.
+* Debajo (después) del bloque de código de iteración, la solución debe usar una instrucción Console.WriteLine() para informar al usuario de que se ha aceptado su valor de entrada.
+*/
+
+Console.WriteLine("Por favor, ingrese un número entero entre 5 y 10:");
+int userInput;
+
+do
+{
+    // string? readResult = Console.ReadLine(); // Se comenta esta linea para continuar con el resto del curso. // Descomentar esta linea y eliminar la siguiente para permitir la entrada del usuario.
+    string readResult = "6"; // <--- Comentar esta linea para permitir la entrada del usuario.
+    if (int.TryParse(readResult, out userInput))
+    {
+        if (userInput < 5 || userInput > 10)
+        {
+            Console.WriteLine("Por favor, ingrese un número entero entre 5 y 10:");
+        }
+    }
+    else
+    {
+        Console.WriteLine("Entrada no válida. Por favor, ingrese un número entero entre 5 y 10:");
+    }
+} while (userInput < 5 || userInput > 10);
+
+Console.WriteLine("\n--------------------------------------------------");
+Console.WriteLine($"¡Número {userInput} aceptado!");
+Console.WriteLine("--------------------------------------------------");
+
+Console.WriteLine("\n----------------------------------------------------------");
+Console.WriteLine("Unidad 5: Proyecto de código 2, Validar entrada de cadena");
+Console.WriteLine("----------------------------------------------------------\n");
+
+/*
+Estas son las condiciones que el segundo proyecto de codificación debe implementar:
+
+La solución debe incluir una iteración do-while o while.
+
+Antes del bloque de iteración, la solución debe usar una instrucción Console.WriteLine() para solicitar al usuario uno de los tres nombres de rol: Administrador, Director o Usuario.
+
+Dentro del bloque de iteración:
+
+La solución debe usar una instrucción Console.ReadLine() para obtener la entrada del usuario.
+La solución debe garantizar que el valor especificado coincide con una de las tres opciones de rol.
+La solución debe usar el método Trim() en el valor de entrada para omitir los caracteres de espacio iniciales y finales.
+La solución debe usar el método ToLower() en el valor de entrada para omitir el caso.
+Si el valor especificado no coincide con una de las opciones de rol, el código debe usar una instrucción Console.WriteLine() para solicitar al usuario una entrada válida.
+Debajo (después) del bloque de código de iteración, la solución debe usar una instrucción Console.WriteLine() para informar al usuario de que se ha aceptado su valor de entrada.
+*/
+
+Console.WriteLine(
+    "Por favor, ingrese uno de los siguientes roles: Administrador, Director o Usuario:\n"
+);
+
+string userRole = "";
+
+// string? readRole = ""; // Se harcodea entrada para continuar con el curso. // Descomentar esta linea y eliminar la siguiente para permitir la entrada del usuario.
+string? readRole = "administrador"; // <--- Comentar esta linea para permitir la entrada del usuario.
+
+while (readRole != "administrador" && readRole != "director" && readRole != "usuario")
+{
+    readRole = Console.ReadLine()?.Trim().ToLower();
+
+    if (readRole == "administrador" || readRole == "director" || readRole == "usuario")
+    {
+        userRole = readRole;
+        break;
+    }
+    else
+    {
+        Console.WriteLine(
+            "Entrada no válida. Por favor, ingrese uno de los siguientes roles: Administrador, Director o Usuario:\n"
+        );
+    }
+}
+
+Console.WriteLine($"\n--------------------------------------------------");
+Console.WriteLine($"¡Rol {userRole} aceptado!");
+Console.WriteLine("--------------------------------------------------\n");
+
+// -------------------------------------------------
+
+Console.WriteLine("----------------------------------------------------------------------------");
+Console.WriteLine("Unidad 5: Proyecto de código 3, Procesar el contenido de una matriz de cadenas");
+Console.WriteLine("----------------------------------------------------------------------------\n");
+
+/*
+Estas son las condiciones que el tercer proyecto de codificación debe implementar:
+
+La solución debe usar la siguiente matriz de cadenas para representar la entrada en la lógica de codificación:
+
+string[] myStrings = new string[2] { "I like pizza. I like roast chicken. I like salad", "I like all three of the menu choices" };
+
+La solución debe declarar una variable de enteros denominada periodLocation que se pueda usar para contener la ubicación del carácter de punto dentro de una cadena.
+
+La solución debe incluir un bucle externo foreach o for que se pueda usar para procesar cada elemento de cadena de la matriz. La variable de cadena que procesará dentro de los bucles debe denominarse myString.
+
+En el bucle externo, la solución debe usar el método IndexOf() de la clase String para obtener la ubicación del primer carácter de punto de la variable myString. La llamada al método debe ser similar a myString.IndexOf("."). Si no hay ningún carácter de punto en la cadena, se devolverá un valor de -1.
+
+La solución debe incluir un bucle interno do-while o while que se pueda usar para procesar la variable myString.
+
+En el bucle interno, la solución debe extraer y mostrar (escribir en la consola) cada frase contenida en cada una de las cadenas que se procesan.
+
+En el bucle interno, la solución no debe mostrar el carácter de punto.
+
+En el bucle interno, la solución debe usar los métodos Remove(), Substring() y TrimStart() para procesar la información de cadena.
+*/
+
+string[] myStrings = new string[2]
+{
+    "I like pizza. I like roast chicken. I like salad",
+    "I like all three of the menu choices",
+};
+
+int periodLocation;
+
+foreach (string myString in myStrings)
+{
+    periodLocation = myString.IndexOf(".");
+
+    if (periodLocation != -1)
+    {
+        while (periodLocation != -1)
+        {
+            Console.WriteLine(myString.Substring(0, periodLocation).TrimStart());
+            myString.Remove(0, periodLocation + 1);
+            periodLocation = myString.IndexOf(".");
+        }
+    }
+    else
+    {
+        Console.WriteLine(myString);
+    }
+}
+
 // -------------------------------------------------
 // Fin del programa
 // -------------------------------------------------
