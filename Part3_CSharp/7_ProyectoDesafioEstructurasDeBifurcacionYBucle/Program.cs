@@ -351,9 +351,21 @@ do
                     )
                 )
                 {
-                    Console.WriteLine(
-                        $"This is an animal that needs to be edited: {ourAnimals[i, 0]}"
-                    );
+                    do
+                    {
+                        Console.WriteLine($"Enter an age for {ourAnimals[i, 0]} ");
+                        readResult = Console.ReadLine();
+                        if (readResult != null)
+                        {
+                            animalAge = readResult;
+                            validEntry = int.TryParse(animalAge, out petAge);
+
+                            if (petAge > 0 && petAge < 50)
+                            {
+                                ourAnimals[i, 2] = "Age: " + animalAge.Trim();
+                            }
+                        }
+                    } while (validEntry == false);
                 }
             }
 
