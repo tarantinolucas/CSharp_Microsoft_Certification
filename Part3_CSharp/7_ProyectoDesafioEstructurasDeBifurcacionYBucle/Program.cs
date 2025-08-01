@@ -342,30 +342,57 @@ do
             // Ensure animal ages and physical descriptions are complete
             for (int i = 0; i < maxPets; i++)
             {
-                if (
-                    ourAnimals[i, 0] != "ID #: "
-                    && (
+                if (ourAnimals[i, 0] != "ID #: ")
+                {
+                    // ensure pet age is complete
+                    if (
                         ourAnimals[i, 2] == "Age: ?"
                         || ourAnimals[i, 2] == "Age: "
                         || ourAnimals[i, 2] == "Age: tbd"
                     )
-                )
-                {
-                    do
                     {
-                        Console.WriteLine($"Enter an age for {ourAnimals[i, 0]} ");
-                        readResult = Console.ReadLine();
-                        if (readResult != null)
+                        do
                         {
-                            animalAge = readResult;
-                            validEntry = int.TryParse(animalAge, out petAge);
-
-                            if (petAge > 0 && petAge < 50)
+                            Console.WriteLine($"Enter an age for {ourAnimals[i, 0]} ");
+                            readResult = Console.ReadLine();
+                            if (readResult != null)
                             {
-                                ourAnimals[i, 2] = "Age: " + animalAge.Trim();
+                                animalAge = readResult;
+                                validEntry = int.TryParse(animalAge, out petAge);
+
+                                if (petAge > 0 && petAge < 50)
+                                {
+                                    ourAnimals[i, 2] = "Age: " + animalAge.Trim();
+                                }
                             }
-                        }
-                    } while (validEntry == false);
+                        } while (validEntry == false);
+                    }
+
+                    // ensure physical description is complete
+                    if (
+                        ourAnimals[i, 4] == "Physical description: ?"
+                        || ourAnimals[i, 4] == "Physical description: "
+                        || ourAnimals[i, 4] == "Physical description: tbd"
+                    )
+                    {
+                        do
+                        {
+                            Console.WriteLine(
+                                $"Enter a physical description for {ourAnimals[i, 0]} (size, color, breed, gender, weight, housebroken)"
+                            );
+                            readResult = Console.ReadLine();
+                            if (readResult != null)
+                            {
+                                animalPhysicalDescription = readResult;
+                                ourAnimals[i, 4] =
+                                    "Physical description: " + animalPhysicalDescription.Trim();
+                            }
+                        } while (animalPhysicalDescription.Trim().Length < 4);
+
+                        Console.WriteLine(
+                            "Age and physical description fields are complete for all of our friends."
+                        );
+                    }
                 }
             }
 
